@@ -1,0 +1,2 @@
+EMPLOYEE_AUTH_SEED=replace-with-64-random-hex-characters
+DISCORD_STORAGE_KEY=replace-with-a-different-random-secret

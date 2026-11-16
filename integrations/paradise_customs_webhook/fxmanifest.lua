@@ -1,0 +1,5 @@
+fx_version 'cerulean'
+game 'gta5'
+description 'Paradise Customs workshop event delivery'
+server_only 'yes'
+server_script 'server.lua'

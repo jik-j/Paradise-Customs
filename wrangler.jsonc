@@ -1,0 +1,22 @@
+{
+  "name": "paradise-customs",
+  "main": "worker.ts",
+  "compatibility_date": "2026-05-15",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": "./frontend",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "paradise-customs",
+      "database_id": "00000000-0000-4000-8000-000000000000",
+      "migrations_dir": "drizzle"
+    }
+  ],
+  "vars": { "DISCORD_BOT_ID": "", "DISCORD_CHANNEL_ID": "", "DISCORD_WEBHOOK_ID": "", "DISCORD_SHOP": "mechanic2" }
+  // To enable Discord sync every five minutes, add: "triggers": { "crons": ["*/5 * * * *"] }
+}
